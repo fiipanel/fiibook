@@ -1,91 +1,55 @@
+// import '../style.css';
+import '../assets/css/flipbook.style.css';
+// import '../assets/js/jquery-1.8.3.min.js';
 
-import React from "react";
-import '../style.css';
-import HTMLFlipBook from "react-pageflip";
-import { pdfjs, Document, Page as ReactPdfPage } from "react-pdf";
-import filePdf from '../sante.pdf';
+import '../assets/css/style.css';
+import flipBook from  '../assets/js/flipbook.min.js'
+import thumb1 from '../assets/images/book2/thumb1.jpg';
+import self_wood from '../assets/images/shelf_wood.png';
+import shelf_glass from '../assets/images/shelf_glass.png';
+import shelf_metal from '../assets/images/shelf_metal.png';
+// import filePdf from '../sante.pdf';
 import { Link } from 'react-router-dom';
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-
-const Page = React.forwardRef(({ pageNumber }, ref) => {
-    return (
-        <div ref={ref}>
-            <ReactPdfPage pageNumber={pageNumber} width={300} />
-        </div>
-    );
-});
-
-const PageCover = React.forwardRef((props, ref) => {
-    return (
-        <div className="page page-cover" ref={ref} data-density="hard" style={{ width: '300px' }}>
-            <div className="page-content">
-                <h2>{props.children}</h2>
-            </div>
-        </div>
-    );
-});
 
 function Sample2() {
-    const [page, setPage] = React.useState(0)
-    let flipBook = React.useRef();
-    console.log(flipBook)
-
-    const nextButtonClick = () => {
-        flipBook.pageFlip().flipNext()
-    }
-    const prevButtonClick = () => {
-        flipBook.pageFlip().flipPrev()
-    };
+   
+    console.log(flipBook);
 
     return (
+
         <div className="App">
-            <Document file={filePdf}>
-                <HTMLFlipBook
-                    width={300}
-                    height={424}
-                    size="stretch"
-                    minWidth={300}
-                    maxWidth={300}
-                    minHeight={424}
-                    maxHeight={424}
-                    maxShadowOpacity={0.7}
-                    showCover={true}
-                    mobileScrollSupport={true}
-                    className="demo-book"
-                    onFlip={setPage}
-                    ref={(el) => (flipBook = el)}
-                >
-                    <PageCover>BOOK TITLE</PageCover>
-                    <Page pageNumber={1} />
-                    <Page pageNumber={2} />
-                    <Page pageNumber={3} />
-                    <Page pageNumber={4} />
-                    <Page pageNumber={5} />
-                    <Page pageNumber={6} />
-                    <Page pageNumber={7} />
-                    <Page pageNumber={8} />
-                    <Page pageNumber={9} />
-                    <Page pageNumber={10} />
-                    <Page pageNumber={11} />
-                    <Page pageNumber={12} />
-                    <Page pageNumber={13} />
-                    <Page pageNumber={14} />
-                    <PageCover>THE END</PageCover>
-                </HTMLFlipBook>
-                <div className="container" style={{ marginTop: '15px' }}>
-                    <div>
-                        <button type="button" onClick={prevButtonClick}>
-                            Previous page
-                        </button>
-                        [<span>{page.data}</span> of
-                        <span>{page.data}</span>]
-                        <button type="button" onClick={nextButtonClick}>
-                            Next page
-                        </button>
-                    </div>
+                        
+            <div className="bookshelf">
+                <div className="covers">
+                    <div className="thumb book-1"><img src={thumb1}   alt=""/></div>
+                    <div className="thumb book-2"><img src={thumb1}  alt=""/></div>
+                    <div className="thumb book-3"><img src={thumb1}  alt=""/></div>
+                    <div className="thumb book-4"><img src={thumb1}  alt=""/></div>
+                    <div className="thumb book-4"><img src={thumb1}  alt=""/></div>
                 </div>
-            </Document>
+                <img className="shelf-img" src={self_wood}  alt=""/>
+            </div>
+
+            <div className="bookshelf">
+                <div className="covers">
+                    <div className="thumb book-1"><img src={thumb1}  alt=""/></div>
+                    <div className="thumb book-2"><img src={thumb1}  alt=""/></div>
+                    <div className="thumb book-3"><img src={thumb1}  alt=""/></div>
+                </div>
+                <img className="shelf-img" src={shelf_glass} alt=''/>
+            </div>
+
+            <div className="bookshelf">
+                <div className="covers">
+                    <div className="thumb book-1"><img src={thumb1}  alt=""/></div>
+                    <div className="thumb book-2"><img src={thumb1}  alt=""/></div>
+                    <div className="thumb book-3"><img src={thumb1}  alt=""/></div>
+                    <div className="thumb book-4"><img src={thumb1}  alt=""/></div>
+                </div>
+                <img className="shelf-img" src={shelf_metal} alt=""/>
+            </div>
+
             <Link to="/">
                 <span>Home</span>
             </Link>
