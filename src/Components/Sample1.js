@@ -1,10 +1,10 @@
 
 import React from "react";
+import { Link } from 'react-router-dom';
 import '../style.css';
 import HTMLFlipBook from "react-pageflip";
 import { pdfjs, Document, Page as ReactPdfPage } from "react-pdf";
 import filePdf from '../sante.pdf';
-import { Link } from 'react-router-dom';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 

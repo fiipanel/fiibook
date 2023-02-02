@@ -11,8 +11,9 @@ export default function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/sample1" element={<Sample1 />} />
-                <Route path="/sample2" element={<Sample2 />} />
+                <Route path="/sampleOne" element={<Sample1 />} />
+                <Route path="/sampletwo" element={<Sample2 />} />
+                <Route path="/*" element={<p>not found</p>} />
             </Routes>
         </Router>
     );
