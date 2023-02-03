@@ -40,6 +40,10 @@ function Sample1() {
 
     return (
         <div className="App">
+            <Link to="/">
+                <span>Home</span>
+            </Link>
+            
             <Document file={filePdf}>
                 <HTMLFlipBook
                     width={300}
@@ -86,9 +90,7 @@ function Sample1() {
                     </div>
                 </div>
             </Document>
-            <Link to="/">
-                <span>Home</span>
-            </Link>
+           
         </div>
     );
 }
