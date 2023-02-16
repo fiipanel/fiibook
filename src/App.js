@@ -8,21 +8,32 @@ import NotFound from './Components/pages/NotFound';
 import Navbar from './layouts/Navbar';
 import Contact from './Components/pages/Contact';
 import About from './Components/pages/About';
+import Sample3 from './Components/Sample3';
+// import { AuthContextProvider } from './context/AuthContext';
+import SignIn from './auth/SignIn';
+import Welcome from './Components/Welcome';
 
 
 export default function App() {
+    
     return (
-        <BrowserRouter>
-            <Navbar />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/sampleOne" element={<Sample1 />} />
-                <Route path="/sampletwo" element={<Sample2 />} />
-                <Route path="/contact-us" element={<Contact />} />
-                <Route path="/about-us" element={<About />} />
-                <Route path="*" element={<NotFound />} />
-            </Routes>
-        </BrowserRouter>
+
+        // <AuthContextProvider>
+            <BrowserRouter>
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/dashboard" element={<Welcome />} />
+                    <Route path="/sampleOne" element={<Sample1 />} />
+                    <Route path="/sampletwo" element={<Sample2 />} />
+                    <Route path="/sample3" element={<Sample3 />} />
+                    <Route path="/contact-us" element={<Contact />} />
+                    <Route path="/about-us" element={<About />} />
+                    <Route path="/signin" element={<SignIn />} />
+                    <Route path="*" element={<NotFound />} />
+                </Routes>
+            </BrowserRouter>
+        // </AuthContextProvider>
     );
 }
 
