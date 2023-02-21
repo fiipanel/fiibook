@@ -46,8 +46,8 @@ export default function App() {
                         <Route path="/signin" element={<SignIn />} />
                         <Route path="*" element={<NotFound />} /> */}
                     </Routes>
-                </div>
                 <Footer />
+                </div>
 
             {/* </div> */}
           

@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import user1 from "../img/user1.png";
+
 
 const Sidebar = () => {
     return (
@@ -5,9 +8,9 @@ const Sidebar = () => {
             { /* sidebar left start */}
             <div className="sidebar sidebar-left">
                 <div className="profile-link">
-                    <a href="#" className="media">
+                    <a  className="media">
                         <div className="w-auto h-100">
-                            <figure className="avatar avatar-40"><img src="img/user1.png" alt="" /> </figure>
+                            <figure className="avatar avatar-40"><img src={user1} alt="" /> </figure>
                         </div>
                         <div className="media-body">
                             <h5>John Doe <span className="status-online bg-success" /></h5>
@@ -109,7 +112,7 @@ const Sidebar = () => {
                                 <div className="card-body userlist_large">
                                     <div className="media">
                                         <figure className="avatar avatar-120 rounded-circle my-2">
-                                            <img src="img/user1.png" alt="user image" />
+                                            <img src={user1} alt="user image" />
                                         </figure>
                                         <div className="media-body">
                                             <h4 className="mt-0 text-white">Max Johnsons</h4>
