@@ -29,7 +29,7 @@ const PageCover = React.forwardRef((props, ref) => {
 function Sample1() {
     const [page, setPage] = React.useState(0)
     let flipBook = React.useRef();
-    // console.log(flipBook)
+    console.log(flipBook)
 
     const nextButtonClick = () => {
         flipBook.pageFlip().flipNext()
