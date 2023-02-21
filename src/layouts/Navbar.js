@@ -30,7 +30,7 @@ const  Navbar = () => {
             </nav> */}
 
             {/* <Outlet /> */}
-            { /* fullscreen menu start */}
+           
             <div className="modal fade popup-fullmenu" id="fullscreenmenu" tabIndex={-1} role="dialog" aria-hidden="true">
                 <div className="modal-dialog" role="document">
                     <div className="modal-content fullscreen-menu">

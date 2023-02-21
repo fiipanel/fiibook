@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import user1 from "../img/user1.png";
 
 
