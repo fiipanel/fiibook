@@ -17,8 +17,6 @@ import '../assets/flipBook';
 function Sample2() {
     const open = () => {
         
-
-        
         $(".book-1").flipBook({
             // pdfUrl: filePdf,
             pages: [
