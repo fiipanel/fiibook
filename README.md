@@ -32,7 +32,7 @@ git checkout -b dev
 ```
 
 7. Ajouter vos changements et faites un commit
-8. Envoyer vos changements
+8. Envoyer vos changementsnp
 
 ```sh
 git push origin dev

@@ -3,7 +3,7 @@ import { Outlet, Link } from "react-router-dom";
 const  Navbar = () => {
     return (
         <>
-            <nav>
+            {/* <nav>
                 <ul>
                     <li>
                         <Link to="/">Home</Link>
@@ -27,11 +27,11 @@ const  Navbar = () => {
                         <Link to="/signin">SignIn</Link>
                     </li>
                 </ul>
-            </nav>
+            </nav> */}
 
             {/* <Outlet /> */}
            
-            {/* <div className="modal fade popup-fullmenu" id="fullscreenmenu" tabIndex={-1} role="dialog" aria-hidden="true">
+            <div className="modal fade popup-fullmenu" id="fullscreenmenu" tabIndex={-1} role="dialog" aria-hidden="true">
                 <div className="modal-dialog" role="document">
                     <div className="modal-content fullscreen-menu">
                         <div className="modal-header">
@@ -101,7 +101,7 @@ const  Navbar = () => {
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
             { /* fullscreen menu ends */}
         </>
     )
