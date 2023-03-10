@@ -30,11 +30,11 @@ export default function App() {
             {/* <div className="loader justify-content-center ">
                     <div className="maxui-roller align-self-center"><div /><div /><div /><div /><div /><div /><div /><div /></div>
                 </div> */}
-            {/* <div className="wrapper" > */}
-                {/* <Sidebar /> */}
+            <div className="wrapper" >
+                <Sidebar />
                 <Navbar />
                
-                {/* <div className="page" >  */}
+                <div className="page" > 
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/dashboard" element={<Welcome />} />
@@ -46,10 +46,10 @@ export default function App() {
                         <Route path="/signin" element={<SignIn />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
-                {/* <Footer /> */}
-                {/* </div> */}
+                <Footer />
+                </div>
 
-            {/* </div> */}
+            </div>
           
         </BrowserRouter>
     );
