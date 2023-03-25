@@ -43,7 +43,7 @@ function Sample1() {
             <Link to="/">
                 <span>Home</span>
             </Link>
-            
+
             <Document file={filePdf}>
                 <HTMLFlipBook
                     width={300}
@@ -90,7 +90,7 @@ function Sample1() {
                     </div>
                 </div>
             </Document>
-           
+
         </div>
     );
 }
