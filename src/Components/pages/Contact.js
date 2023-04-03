@@ -2,11 +2,11 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div className="App">
-            <h1>
-                Contactez Nous
-            </h1>
-        </div>
+        <>{ /*=============== CONTACTME ===============*/}
+            <section className="container section section__height" id="contactme">
+                <h2 className="section__title">Contactme</h2>
+            </section>
+        </>
     );
 }
 

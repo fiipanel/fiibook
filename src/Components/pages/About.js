@@ -1,11 +1,12 @@
 
 const About = () => {
     return (
-        <div className="App">
-            <h1>
-                About Us
-            </h1>
-        </div>
+        <>
+            { /*=============== ABOUT ===============*/}
+            <section className="container section section__height" id="about">
+                <h2 className="section__title">About</h2>
+            </section>
+        </>
     );
 }
 
