@@ -1,4 +1,6 @@
-body {
+@import 'assets/css/styles.css';
+@import url("https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css");
+/* body {
   background-color: #bdbebd73;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -41,4 +43,4 @@ code {
 
 .App-link {
   color: #000000;
-}
+} */
