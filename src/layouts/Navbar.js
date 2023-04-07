@@ -75,6 +75,9 @@ const Navbar = () => {
                                     <Link className="nav-link" to="/sampleOne" rel="nofollow">Exemple 1</Link>
                                 </li>
                                 <li className="nav-item">
+                                    <Link className="nav-link" to="/sampletwo" rel="nofollow">Exemple 2</Link>
+                                </li>
+                                <li className="nav-item">
                                     <Link className="nav-link" to="/about" rel="nofollow">About </Link>
                                 </li>
                                 <li className="nav-item">
