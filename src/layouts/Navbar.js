@@ -60,8 +60,8 @@ const Navbar = () => {
                 <nav className="navbar navbar-expand-lg navbar-light bg-white fixed-top">
                     <div className="container-fluid">
                         { /* Navbar brand */}
-                        <a className="navbar-brand" target="_blank" href="https://mdbootstrap.com/docs/standard/">
-                            <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="16" alt="" loading="lazy" style={{ marginTop: "-3px" }} />
+                        <a className="navbar-brand" target="_blank" height="16" alt="" loading="lazy" style={{ marginTop: "-3px" }} >
+                        fiibook
                         </a>
                         <button className="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
                             <i className="fas fa-bars" />

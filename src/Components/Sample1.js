@@ -14,33 +14,11 @@ import MyDocument from "./MyDocument";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-// const Page = React.forwardRef(({ pageNumber }, ref) => {
 
-//     return (
-//         <div ref={ref}>
-//             <ReactPdfPage pageNumber={pageNumber} width={300} />
-//         </div>
-//     );
-// });
-
-// const PageCover = React.forwardRef((props, ref) => {
-//     return (
-//         <div className="page page-covre img-fluid" ref={ref}
-//             data-density="hard" style={{ width: '100px' }} >
-//             <div className="page-content img-fluid">
-//                 <h2>{props.children}</h2>
-//             </div>
-//         </div>
-//     );
-// });
-
-
-
-// pdf3, pdf4, filePdf
 
 function Sample1() {
 
-    const [files, setFiles] = useState([pdf3, pdf4,]);
+    const [files, setFiles] = useState([pdf3, pdf4, pdf3, pdf4, pdf3, pdf4, pdf3, pdf4, pdf3, pdf4, pdf3, pdf4, pdf3, pdf4, pdf3, pdf4, pdf3, pdf4]);
 
     // const [page, setPage] = React.useState(0)
     // let flipBook = React.useRef();
@@ -62,10 +40,10 @@ function Sample1() {
                     {
                         files.map((file, index) => {
                             return (
-                                <div className="col-lg-4 col-md-6 mb-4" key={index}>
-                                        <MyDocument
-                                            filePdf={file}
-                                        />
+                                <div className="col-md-2 mx-3 my-1" key={index}>
+                                    <MyDocument
+                                        filePdf={file}
+                                    />
                                 </div>
                             )
                         })
