@@ -12,10 +12,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <ChakraProvider>
-        <FirebaseContext.Provider value={new Firebase()}>
-            <App />
-        </FirebaseContext.Provider>
-
+            <FirebaseContext.Provider value={new Firebase()}>
+                <App />
+            </FirebaseContext.Provider>
         </ChakraProvider>
     </React.StrictMode>
 );

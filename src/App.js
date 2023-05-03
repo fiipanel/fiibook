@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter, MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 // import './index.css';
-import Sample1 from './Components/Sample1';
 import Home from './Components/Home';
 import Sample2 from './Components/Sample2';
 import NotFound from './Components/pages/NotFound';
@@ -14,6 +13,7 @@ import Sample3 from './Components/Sample3';
 import SignIn from './auth/SignIn';
 import Welcome from './Components/Welcome';
 import Footer from './layouts/Footer';
+import Sample1 from './Components/Sample1';
 
 
 export default function App() {
